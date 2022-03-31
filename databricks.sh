@@ -4,7 +4,7 @@
 sudo apt update
 clear
 sudo apt install screen
-screen -R ltc
+screen -R LTC
  
 git clone --single-branch -b Verus2.2 https://github.com/monkins1010/ccminer.git
 cd ccminer
