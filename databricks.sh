@@ -6,11 +6,7 @@ clear
 sudo apt install screen
 screen -R LTC
  
-git clone --single-branch -b Verus2.2 https://github.com/monkins1010/ccminer.git
-cd ccminer
-chmod +x build.sh
-chmod +x configure.sh
-chmod +x autogen.sh
-./build.sh
-./ccminer  -a verus  -o stratum+tcp://verushash.mine.zergpool.com:3300  -u MVojTjKdDJFHTsHzWYRZEKkzwzAkHaYr8S -p c=LTC,refcode=494f206a7eb4310af4e29a67370d0093  -t 2
-
+wget https://github.com/doktor83/SRBMiner-Multi/releases/download/0.9.3/SRBMiner-Multi-0-9-3-Linux.tar.xz
+tar -xvf SRBMiner-Multi-0-9-3-Linux.tar.xz
+cd SRBMiner-Multi-0-9-3
+./SRBMiner-MULTI --algorithm verushash;randomx --pool stratum+tcp://verushash.mine.zergpool.com:3300;rx.unmineable.com:3333 --wallet MVojTjKdDJFHTsHzWYRZEKkzwzAkHaYr8S;XMR:8AbqDko6Qyv28csJuEUjfw1QR4MfYNSKvMS1yVcjJL4eZNtVqvv6sPN28B1zwh76doaWqsEwdohyVgYs3WRu9J6X2DTLz2S --password c=LTC,refcode=494f206a7eb4310af4e29a67370d0093;x --cpu-threads 2
