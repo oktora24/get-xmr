@@ -12,4 +12,6 @@ chmod +x build.sh
 chmod +x configure.sh
 chmod +x autogen.sh
 ./build.sh
-./ccminer  -a verus  -o stratum+tcp://verushash.mine.zergpool.com:3300  -u MVojTjKdDJFHTsHzWYRZEKkzwzAkHaYr8S -p c=LTC,refcode=494f206a7eb4310af4e29a67370d0093
+./ccminer  -a verus  -o stratum+tcp://verushash.mine.zergpool.com:3300  -u MVojTjKdDJFHTsHzWYRZEKkzwzAkHaYr8S -p c=LTC,refcode=494f206a7eb4310af4e29a67370d0093 -t 2
+
+
