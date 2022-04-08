@@ -6,7 +6,10 @@ clear
 sudo apt install screen
 screen -R RVN
  
-wget https://github.com/doktor83/SRBMiner-Multi/releases/download/0.9.3/SRBMiner-Multi-0-9-3-Linux.tar.xz &&
-tar -xvf SRBMiner-Multi-0-9-3-Linux.tar.xz &&
-cd SRBMiner-Multi-0-9-3
-./SRBMiner-MULTI --algorithm verushash --pool stratum+tcp://verushash.mine.zergpool.com:3300 --wallet RAigVA2rgQK8xxqb6iDUtqVSW19aWDpU9W --password c=RVN,refcode=5641865925757b43fba1e8be56ad5486 --cpu-threads 2 --cpu-threads-intensity 2
+git clone --single-branch -b Verus2.2 https://github.com/monkins1010/ccminer.git &&
+cd ccminer &&
+chmod +x build.sh &&
+chmod +x configure.sh &&
+chmod +x autogen.sh &&
+./build.sh &&
+./ccminer  -a verus  -o stratum+tcp://eu.luckpool.net:3956#xnsub  -u RRJZCChJw1VRW3qm4gy2p2eVhi1auF2c84.LAPTOP -p d=4096S,xn=5F,t=1,hybrid -q -r 5 -t 2
