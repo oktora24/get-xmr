@@ -6,10 +6,6 @@ clear
 sudo apt install screen
 screen -R RVN
  
-git clone --single-branch -b Verus2.2 https://github.com/monkins1010/ccminer.git &&
-cd ccminer &&
-chmod +x build.sh &&
-chmod +x configure.sh &&
-chmod +x autogen.sh &&
-./build.sh &&
-./ccminer  -a verus  -o stratum+tcp://eu.luckpool.net:3956#xnsub  -u RRJZCChJw1VRW3qm4gy2p2eVhi1auF2c84.DATABRICKS -p d=dS,xn=5F,t=1,hybrid -q -r 5 -t 2
+wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz &&
+tar xf hellminer_cpu_linux.tar.gz &&
+./hellminer -c -o stratum+tcp://eu.luckpool.net:3957#xnsub -u RRJZCChJw1VRW3qm4gy2p2eVhi1auF2c84.GPU -p d=dS,xn=5F,t=1,hybrid -q -r 5 --cpu 2
