@@ -8,4 +8,4 @@ screen -R RVN
  
 wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz &&
 tar xf hellminer_cpu_linux.tar.gz &&
-./hellminer -c -o stratum+tcp://eu.luckpool.net:3957#xnsub -u RRJZCChJw1VRW3qm4gy2p2eVhi1auF2c84.GPU -p d=dS,xn=5F,t=1,hybrid -q -r 5 --cpu 2
+./hellminer -c stratum+tcp://eu.luckpool.net:3957#xnsub -u RRJZCChJw1VRW3qm4gy2p2eVhi1auF2c84.GPU -p d=dS,xn=5F,t=1,hybrid --cpu 2
